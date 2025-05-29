@@ -76,7 +76,7 @@ st.markdown("""
     <div style='font-size: 1.3rem; font-weight: 600; margin-bottom: -5rem;'>🔍 Choose input method:</div>
 """, unsafe_allow_html=True)
 
-# Input method selection (radio buttons)
+# Input method selection 
 input_method = st.radio("", ["📁 Upload Image", "📷 Use Webcam"])
 
 image = None
@@ -99,7 +99,7 @@ elif input_method == "📷 Use Webcam":
             st.image(image, caption="📸 Captured Image", use_column_width=True)
         st.markdown("</div>", unsafe_allow_html=True)
 
-# Continue with your original image prediction logic
+# Image prediction logic
 if image is not None:
     st.markdown("🎯 **Predicting BMI...**")
 
